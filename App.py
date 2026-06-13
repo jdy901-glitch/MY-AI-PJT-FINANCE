@@ -4,7 +4,7 @@ import google.generativeai as genai
 
 # 1. API 키 설정 (클라우드 보안 설정용)
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 # 2. 앱 화면 구성 (UI)
 st.title("📈 내 손안의 AI 금융 비서")
